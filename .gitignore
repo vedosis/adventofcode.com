@@ -68,3 +68,5 @@ fabric.properties
 pkg/
 src/
 !src/github.com/vedosis/adventofcode.com-2015/
+
+tmp/
