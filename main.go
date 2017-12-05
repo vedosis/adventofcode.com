@@ -29,21 +29,28 @@ func main() {
 			Aliases: []string{"1"},
 			Usage:   "Run the first exercise: http://adventofcode.com/2015/day/1",
 			Action:  ex1Action,
-			Flags: []cli.Flag{ file_path },
+			Flags:   []cli.Flag{file_path},
 		},
 		{
 			Name:    "ex2",
 			Aliases: []string{"2"},
 			Usage:   "Run the second exercise: http://adventofcode.com/2015/day/2",
 			Action:  ex2Action,
-			Flags: []cli.Flag{ file_path },
+			Flags:   []cli.Flag{file_path},
 		},
 		{
 			Name:    "ex3",
 			Aliases: []string{"3"},
 			Usage:   "Numba 3",
 			Action:  ex3Action,
-			Flags: []cli.Flag{ file_path },
+			Flags:   []cli.Flag{file_path},
+		},
+		{
+			Name:    "ex4",
+			Aliases: []string{"4"},
+			Usage:   "Numba4",
+			Action:  ex4Action,
+			Flags:   []cli.Flag{file_path},
 		},
 	}
 
