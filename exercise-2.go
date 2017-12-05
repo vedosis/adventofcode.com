@@ -1,4 +1,4 @@
-package adventofcode_com
+package main
 
 import (
 	"bufio"
@@ -67,7 +67,7 @@ func ex2ParsePackageDimensions(input string) *Box {
 }
 
 func ex2Action(c *cli.Context) error {
-	file, err := os.Open("input/2015/exercise-2.txt")
+	file, err := os.Open(fmt.Sprintf("%s/%s", c.String("dir"),"exercise-2.txt"))
 	check(err)
 	defer file.Close()
 

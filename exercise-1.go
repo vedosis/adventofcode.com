@@ -1,4 +1,4 @@
-package adventofcode_com
+package main
 
 import (
 	"fmt"
@@ -44,7 +44,8 @@ func ex1ParsePosition(input string) int {
 }
 
 func ex1Action(c *cli.Context) {
-	input, err := ioutil.ReadFile("./input/2015/exercise-1.txt")
+	c.String("dir")
+	input, err := ioutil.ReadFile(fmt.Sprintf("%s/%s", c.String("dir"), "exercise-1.txt"))
 	check(err)
 	s := string(input)
 

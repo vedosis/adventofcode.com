@@ -1,4 +1,4 @@
-package adventofcode_com
+package main
 
 import "testing"
 
